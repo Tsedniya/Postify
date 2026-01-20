@@ -38,7 +38,7 @@ const upload = multer({storage})
 
 
 /*MONGO SETUP */
-const PORT = process.env.PORT || 5001
+const PORT = process.env.PORT || 6001
 mongoose.connect(process.env.MONGO)
   .then(() => {
     app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
